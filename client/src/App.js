@@ -9,6 +9,7 @@ function App() {
     const url = `${process.env.REACT_APP_API_URL}/test`;
     console.log("url: ", url);
     const res = await fetch(url);
+    console.log("res", res);
     const { mes } = await res.json();
     console.log(mes);
     setData(mes);
