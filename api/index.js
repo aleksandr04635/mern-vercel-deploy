@@ -22,4 +22,4 @@ if (process.env.API_PORT) {
   }
   console.log(`Server OK `);
 }); */
-module.exports = app;
+// module.exports = app;
