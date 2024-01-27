@@ -12,4 +12,10 @@ if (process.env.API_PORT) {
     console.log(`Server OK on localhost:${process.env.API_PORT || 4500}`);
   });
 }
+app.listen(4000, (err) => {
+  if (err) {
+    return console.log(err);
+  }
+  console.log(`Server OK `);
+});
 module.exports = app;
