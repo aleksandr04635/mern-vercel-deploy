@@ -7,7 +7,7 @@ function App() {
 
   const fetchSer = async function () {
     const url = `${process.env.REACT_APP_API_URL}/test`;
-    console.log(url);
+    console.log("url: ", url);
     const res = await fetch(url);
     const { mes } = await res.json();
     console.log(mes);
