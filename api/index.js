@@ -22,4 +22,4 @@ app.listen(4000, (err) => {
   }
   console.log(`Server OK `);
 });
-// module.exports = app;
+module.exports = app;
