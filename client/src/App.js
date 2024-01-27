@@ -10,7 +10,7 @@ function App() {
     console.log("url: ", url);
     const res = await fetch(url);
     console.log("res:", res);
-    console.log("res.json():", res.json());
+    //console.log("res.json():", res.json());
     const { mes } = await res.json();
     console.log(mes);
     setData(mes);

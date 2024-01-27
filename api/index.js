@@ -5,11 +5,11 @@ const cors = require("cors");
 app.use(cors({}));
 app.get("/api/test", function (req, res) {
   console.log("/api/test");
-  res.status(200).send({ mes: "/api/test: " + Date.now() });
+  res.json({ mes: "/api/test: " + Date.now() });
 });
 app.get("/test", function (req, res) {
   console.log("/test");
-  res.status(200).send({ mes: "/test: " + Date.now() });
+  res.json({ mes: "/test: " + Date.now() });
 });
 if (process.env.API_PORT) {
   app.listen({ port: process.env.API_PORT || 4500 }, () => {
